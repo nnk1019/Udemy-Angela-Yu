@@ -8,57 +8,78 @@ body {
 }
 .main {
   flex: 1;
-  display: flex; /* Enable flexbox on the main container */ 
-  flex-direction: column; /* Arrange items in a column */ 
-  align-items: center;
+  
 }
 
 h1 {
   font-size: 5rem;
+}
+
+.tile-image
+{
+  float: left;
+  height: 200px;
+  margin: right 50px;
+}
+
+.creative
+{
+  color: darkblue;
+}
+
+.card-text
+{
   text-align: center;
 }
 
-footer {
+.card-title
+{
   text-align: center;
-  color: midnightblue;
-  clear: both;
 }
 
 .left
 {
   float: left;
-  
 }
 
 .right
 {
   float: right;
-  
 }
 
 .card
 {
-  width: 50%;
-  text-align: center;
+  width: 45%;
 }
 
-.tile-image
+footer 
 {
-  height: 200px;
+  text-align: right;
+  color: midnightblue;
+  clear: both;
 }
 
-img
+@media (max-width: 680px)
 {
-  float: left;
-}
+  .logo
+  {
+    width: 100px;
+  }
 
-.creative
-{
-  color: blue;
-}
+  h1
+  {
+    font-size: 3.5rem;
+    text-align: center;
+  }
 
-.logo
-{
-  margin: 0 auto;
-  float: none;
+  .card
+  {
+    display: block;
+    width: 100%;
+  }
+
+  .card img
+  {
+    width: 100%;
+  }
 }
